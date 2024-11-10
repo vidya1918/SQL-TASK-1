@@ -1,0 +1,18 @@
+--create table Employee_Details (Employee_ID serial, First_Name varchar,Last_Name Varchar,Email Varchar,Phone_Number bigint,Hire_Date Date,
+--Salary int,Department_ID int,Is_active Boolean,Job_Title Varchar);
+--insert into Employee_Details values (1,'rohan','karande','rohankarande@gmail.com',8976540345,'2023-5-20',25000.00,2,'yes','IT'),
+--(2,'ranu','pawar','ranupawar@gmail.com',9236541852,'2023-6-19',30000.00,2,'yes','HR'),
+--(3,'manisha','shende','manishashende@gmail.com',8654120369,'2023-8-21',28000.00,3,'No','DATA ANALYST'),
+--(4,'trupti','tiple','truptitiple@gmail.com',9658123459,'2023-9-15',45000.00,6,'Yes','DEVELOPER'),
+--(5,'vidya','tamkhane','vidyatamkhane@gmail.com',9090236582,'2023-4-9',40000.00,24,'No',' JAVA DEVOP')
+--copy Employee_Details From 'V:/Employee_Details (2).csv'delimiter ',' csv header;
+--update employee_details set department_id=0 where is_active=false;
+--update employee_details set salary=salary * 1.08 where is_active=false and department_id=0 
+--select first_name as Name, last_name as Surname from employee_details where salary between 30000 and 50000;
+--select * from employee_details where first_name like 'A%';
+--delete from  employee_details where employee_id between 1 and 5;
+--alter table employee_details rename to employee_data;
+--alter table employee_data rename first_name  to  Name;
+--alter table employee_data rename last_name  to  surname;
+--alter table employee_data add column country varchar (50) default 'India' not null;
+--update employee_data set country='USA' where is_active=false;
